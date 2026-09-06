@@ -1,4 +1,4 @@
-package io.urlshortener;
+package io.urlshortener.linkscontract;
 
 /**
  * The canonical shape of a shortened link, as stored in the DynamoDB Links table.
@@ -10,8 +10,8 @@ package io.urlshortener;
  * @param longUrl             The destination URL this short code redirects to.
  * @param ownerId             The ID of the authenticated owner of this link, or {@code null} if the link was created
  *                            anonymously (omitted entirely rather than stored as an explicit null in DynamoDB).
- * @param createdAt           The epoch-second timestamp when this link was created.
- * @param expiresAt           The epoch-second timestamp after which this link expires,
+ * @param createdAt           The epoch-millisecond timestamp when this link was created.
+ * @param expiresAt           The epoch-millisecond timestamp after which this link expires,
  *                            or {@code null} if the link never expires.
  * @param managementTokenHash The hash of the one-time management token required to edit or delete this link<br/>
  *                            PS: The raw token itself is never stored.
