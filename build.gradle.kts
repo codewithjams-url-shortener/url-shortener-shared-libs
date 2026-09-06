@@ -10,3 +10,15 @@ allprojects {
 		mavenCentral()
 	}
 }
+
+subprojects {
+
+	apply(plugin = "java-library")
+
+	java {
+		toolchain {
+			languageVersion = JavaLanguageVersion.of(21)
+		}
+	}
+
+}
