@@ -1,3 +1,7 @@
+description = """
+	ClickEvent and LinkLifecycleEvent DTOs for the Analytics pipeline (SNS click events and DynamoDB Streams CDC).
+	""".trimIndent()
+
 plugins {
 	`java-library`
 }

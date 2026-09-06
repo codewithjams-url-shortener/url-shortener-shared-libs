@@ -1,3 +1,7 @@
+description = """
+	Plain data shape for the Links DynamoDB table, shared between url-service and redirect-service.
+	""".trimIndent()
+
 plugins {
 	`java-library`
 }

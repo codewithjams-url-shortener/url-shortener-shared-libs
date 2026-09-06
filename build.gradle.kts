@@ -29,6 +29,13 @@ subprojects {
 		publications {
 			create<MavenPublication>("maven") {
 				from(components["java"])
+				pom {
+					description.set(
+						project.provider {
+							project.description
+						}
+					)
+				}
 			}
 		}
 		repositories {

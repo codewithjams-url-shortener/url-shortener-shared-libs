@@ -1,3 +1,7 @@
+description = """
+	Shared message-attribute key constants and TraceContext shape for cross-service trace propagation.
+	""".trimIndent()
+
 plugins {
 	`java-library`
 }
