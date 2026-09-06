@@ -1,4 +1,4 @@
-package io.urlshortener;
+package io.urlshortener.linkscontract;
 
 import org.junit.jupiter.api.Test;
 

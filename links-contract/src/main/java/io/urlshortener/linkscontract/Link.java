@@ -1,4 +1,4 @@
-package io.urlshortener;
+package io.urlshortener.linkscontract;
 
 /**
  * The canonical shape of a shortened link, as stored in the DynamoDB Links table.
