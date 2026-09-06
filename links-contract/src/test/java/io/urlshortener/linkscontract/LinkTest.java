@@ -12,8 +12,8 @@ class LinkTest {
 		final String shortCode = "abc123";
 		final String longUrl = "https://example.com";
 		final String ownerId = "owner-1";
-		final long createdAt = 1_700_000_000L;
-		final Long expiresAt = 1_800_000_000L;
+		final long createdAt = 1_700_000_000_000L;
+		final Long expiresAt = 1_800_000_000_000L;
 		final String managementTokenHash = "hashed-token";
 		final String status = "FLAGGED";
 
@@ -43,7 +43,7 @@ class LinkTest {
 		// Arrange
 		final String shortCode = "abc123";
 		final String longUrl = "https://example.com";
-		final long createdAt = 1_700_000_000L;
+		final long createdAt = 1_700_000_000_000L;
 		final String managementTokenHash = "hashed-token";
 
 		// Act
@@ -70,7 +70,7 @@ class LinkTest {
 				"abc123",
 				"https://example.com",
 				"owner-1",
-				1_700_000_000L,
+				1_700_000_000_000L,
 				null,
 				"hash",
 				null
@@ -79,7 +79,7 @@ class LinkTest {
 				"abc123",
 				"https://example.com",
 				"owner-1",
-				1_700_000_000L,
+				1_700_000_000_000L,
 				null,
 				"hash",
 				null
