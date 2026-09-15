@@ -13,7 +13,7 @@ class LinkTest {
 		final String longUrl = "https://example.com";
 		final String ownerId = "owner-1";
 		final long createdAt = 1_700_000_000_000L;
-		final Long expiresAt = 1_800_000_000_000L;
+		final Long expiresAt = 1_800_000_000L;
 		final String managementTokenHash = "hashed-token";
 		final String status = "FLAGGED";
 
