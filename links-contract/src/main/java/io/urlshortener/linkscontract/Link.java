@@ -11,8 +11,10 @@ package io.urlshortener.linkscontract;
  * @param ownerId             The ID of the authenticated owner of this link, or {@code null} if the link was created
  *                            anonymously (omitted entirely rather than stored as an explicit null in DynamoDB).
  * @param createdAt           The epoch-millisecond timestamp when this link was created.
- * @param expiresAt           The epoch-millisecond timestamp after which this link expires,
- *                            or {@code null} if the link never expires.
+ * @param expiresAt           The epoch-second timestamp after which this link expires, or {@code null}
+ *                            if the link never expires. Deliberately epoch-seconds, not epoch-milliseconds
+ *                            like {@code createdAt} — this is the literal DynamoDB TTL attribute, and
+ *                            DynamoDB's TTL feature requires epoch-seconds specifically.
  * @param managementTokenHash The hash of the one-time management token required to edit or delete this link<br/>
  *                            PS: The raw token itself is never stored.
  * @param status              The moderation status of this link (e.g. {@code "FLAGGED"}, {@code "DISABLED"}),
