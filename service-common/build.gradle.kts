@@ -1,5 +1,5 @@
 description = """
-	Shared message-attribute key constants and TraceContext shape for cross-service trace propagation.
+	Shared message-attribute key constants and TraceContext shape for cross-service trace propagation, and the names of the CloudWatch metrics behind the AppConfig rollback alarm.
 	""".trimIndent()
 
 plugins {
